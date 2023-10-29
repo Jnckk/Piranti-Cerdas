@@ -1,0 +1,10 @@
+MPU6050:
+
+1. VCC (Power) ke 3.3V pada ESP32.
+2. GND (Ground) ke GND pada ESP32.
+3. SCL ke Pin SCL (biasanya Pin 22 pada ESP32).
+4. SDA ke Pin SDA (biasanya Pin 21 pada ESP32).
+
+Buzzer:
+1. Positive (P) ke Pin yang Anda tentukan pada ESP32 untuk mengontrol buzzer (misalnya, Pin 15).
+2. Negative (N) ke GND pada ESP32.
