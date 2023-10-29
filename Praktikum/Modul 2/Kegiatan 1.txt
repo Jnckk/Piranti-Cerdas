@@ -1,0 +1,14 @@
+Rangkaian yang Dibutuhkan:
+*Arduino ESP32
+*Sensor cahaya (misalnya, LDR - Light Dependent Resistor)
+*Resistor 10k ohm (untuk membentuk pembagi tegangan)
+*LED (merah, hijau, dan biru untuk menampilkan cahaya gelap, redup, dan terang)
+*Resistor 220 ohm (untuk pembatasan arus LED)
+*Breadboard dan kabel jumper
+
+Rangkaian:
+*Hubungkan salah satu ujung LDR ke 5V pada ESP32.
+*Hubungkan ujung lain LDR melalui resistor 10k ohm ke tanah (GND) pada ESP32.
+*Hubungkan titik antara LDR dan resistor 10k ohm ke pin analog input pada ESP32 (misalnya, pin A0).
+*Hubungkan LED merah ke pin digital 12, LED hijau ke pin digital 13, dan LED biru ke pin digital 14 pada ESP32.
+*Pasang resistor 220 ohm pada setiap kaki LED (anode) dan hubungkan kaki lainnya ke tanah (GND).

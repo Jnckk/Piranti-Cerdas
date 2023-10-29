@@ -1,0 +1,15 @@
+Rangkaian yang Dibutuhkan:
+*Arduino (misalnya, Arduino UNO)
+*Sebuah LED
+*Sebuah resistor (biasanya 220-330 ohm) untuk membatasi arus LED
+*Sebuah switch (tombol)
+*Breadboard dan kabel jumper
+
+Rangkaian:
+*Hubungkan kaki panjang (anode) dari LED ke pin digital 5 (atau sesuaikan dengan pin yang Anda tentukan dalam kode).
+*Hubungkan kaki pendek (katode) dari LED melalui resistor ke ground (GND).
+*Hubungkan satu kaki switch ke pin digital 21 (atau sesuaikan dengan pin yang Anda tetapkan dalam kode).
+*Hubungkan kaki yang lain dari switch ke 5V (tegangan positif).
+
+
+Pastikan semua komponen terhubung dengan benar, dan Anda siap untuk mengunggah kode ke Arduino dan menguji rangkaian. Dalam rangkaian ini, saat tombol (switch) ditekan, itu akan mengalirkan arus dari pin digital ke GND, yang akan membaca status HIGH pada pin digital yang Anda tetapkan dalam kode. Saat itu terjadi, kode akan menyalakan LED selama 1 detik dan kemudian mematikannya. Jika tombol tidak ditekan, LED akan mati.

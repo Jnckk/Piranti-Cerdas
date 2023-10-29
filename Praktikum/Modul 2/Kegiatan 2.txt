@@ -1,0 +1,13 @@
+Rangkaian yang Dibutuhkan:
+*Arduino ESP32
+*Sensor cahaya (misalnya, LDR - Light Dependent Resistor)
+*Buzzer aktif (buzzer yang aktif saat diberi tegangan)
+*Resistor 10k ohm (untuk membentuk pembagi tegangan)
+*Breadboard dan kabel jumper
+
+Rangkaian:
+*Hubungkan salah satu ujung LDR ke 5V pada ESP32.
+*Hubungkan ujung lain LDR melalui resistor 10k ohm ke tanah (GND) pada ESP32.
+*Hubungkan titik antara LDR dan resistor 10k ohm ke pin digital pada ESP32 (misalnya, pin D2).
+*Hubungkan satu kaki buzzer ke pin digital yang berbeda pada ESP32 (misalnya, pin D3).
+*Hubungkan kaki lain buzzer ke tanah (GND) pada ESP32.
