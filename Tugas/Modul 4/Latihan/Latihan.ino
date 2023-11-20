@@ -5,8 +5,8 @@
 #define SENSORPIN 34
 #define LEDPIN 25
 
-const char* ssid = "kost belakang";
-const char* password = "OKTOPUS8";
+const char* ssid = "Wifi";
+const char* password = "Password wifi";
 const char* serverName = "http://172.20.10.6/pirdas_modul4/cahaya.php";
 
 void setup() {
