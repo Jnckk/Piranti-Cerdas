@@ -7,7 +7,7 @@
 
 const char* ssid = "Wifi";
 const char* password = "Password wifi";
-const char* serverName = "http://172.20.10.6/pirdas_modul4/cahaya.php";
+const char* serverName = "http://172.20.10.6(ubah IP sesuai yang di dapat laptop)/pirdas_modul4/cahaya.php";
 
 void setup() {
   Serial.begin(9600);
