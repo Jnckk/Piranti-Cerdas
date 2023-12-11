@@ -13,8 +13,8 @@ BlynkTimer timer;
 
 // Konfigurasi nama hotspot/SSID beserta password
 char auth[] = BLYNK_AUTH_TOKEN;
-char ssid[] = "ssid wifi";
-char pass[] = "password";
+char ssid[] = "SSID WIFI";
+char pass[] = "PASSWORD";
 
 DHT dht(DHT_PIN, DHT11);
 
@@ -25,29 +25,26 @@ void send_data() {
 
   // Keterangan suhu
   String suhu_keterangan;
-  
+
   if (temperature > 30.0) {
     suhu_keterangan = "Panas";
-    // Suhu panas, bunyikan Buzzer dengan suara sangat kencang
-    digitalWrite(BUZZER_PIN, HIGH);
-    delay(500);
-    digitalWrite(BUZZER_PIN, LOW);
+    // Suhu panas, bunyikan Buzzer dengan frekuensi tinggi
+    tone(BUZZER_PIN, 1000, 500); // 1000 Hz for 500 milliseconds
   } else if (temperature > 25.0) {
     suhu_keterangan = "Hangat";
-    // Suhu hangat, bunyikan Buzzer dengan suara sedang
-    digitalWrite(BUZZER_PIN, HIGH);
-    delay(200);
-    digitalWrite(BUZZER_PIN, LOW);
+    // Suhu hangat, bunyikan Buzzer dengan frekuensi sedang
+    tone(BUZZER_PIN, 500, 200); // 500 Hz for 200 milliseconds
   } else {
     suhu_keterangan = "Normal";
     // Suhu normal, matikan Buzzer
-    digitalWrite(BUZZER_PIN, LOW);
+    noTone(BUZZER_PIN);
   }
 
   // Mengirim suhu dan keterangan ke Blynk
   Blynk.virtualWrite(V0, temperature);
   Blynk.virtualWrite(V1, suhu_keterangan);
 }
+
 
 void setup() {
   Serial.begin(9600);
