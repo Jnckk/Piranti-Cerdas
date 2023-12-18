@@ -2,6 +2,8 @@
 ## Installation
 Pindahkan folder piranti_cerdas_M6 ke dalam folder htdoc pada folder XAMPP
 
+Copy Paste script di dalam SQL.txt pada database untuk membuat database dan tabel yang di perlukan
+
 MPU6050:
 
 ```bash
